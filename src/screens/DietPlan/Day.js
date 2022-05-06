@@ -4,6 +4,9 @@ import CommonStyle from '../../styles/CommonStyle';
 
 const Day = ({navigation, route}) => {
   const [daysList, setDaysList] = useState([]);
+  const helloWorld = () => {
+    alert('Hello World');
+  };
   useEffect(() => {
     setDaysList([]);
     if (route.params.duration === '1') {
